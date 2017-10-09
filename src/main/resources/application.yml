@@ -1,0 +1,14 @@
+#发布端口
+server:
+  port: 9999
+
+
+#配置thymeleaf
+spring:
+  thymeleaf:
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
