@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
+    <title>BootStrap入门Demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body class="container">
+    <h1 style="text-align: center">排版样式</h1>
+    <h2 style="color: red">表格样式</h2>
+    <table class="table table-hover table-bordered table-striped">
+        <thead>
+          <tr >
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="success">
+              <td>aa</td>
+              <td>12</td>
+              <td>男</td>
+          </tr>
+          <tr class="info">
+              <td>bb</td>
+              <td>15</td>
+              <td>女</td>
+          </tr>
+          <tr class="warning">
+              <td>cc</td>
+              <td>18</td>
+              <td>女</td>
+          </tr>
+          <tr class="danger">
+              <td>dd</td>
+              <td>22</td>
+              <td>男</td>
+          </tr>
+          <tr class="sr-only">
+              <td>何睿</td>
+              <td>22</td>
+              <td>男</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <h2 style="color: red">Button按钮样式</h2>
+    <a class="btn btn-default">Link</a>
+    <span class="btn btn-default">span</span><br/><br/>
+
+    <button class="btn btn-default">Button</button>
+    <button class="btn btn-success">Button-success</button>
+    <button class="btn btn-info">Button-info</button>
+    <button class="btn btn-warning">Button-warning</button>
+    <button class="btn btn-danger">Button-danger</button>
+    <button class="btn btn-primary">Button-primary</button>
+    <button class="btn btn-link">Button-link</button>
+
+    <h2 style="color: red">Button按钮大小</h2>
+    <button class="btn btn-default">Button</button>
+    <button class="btn btn-default btn-lg">Button-lg</button>
+    <button class="btn btn-default btn-sm">Button-sm</button>
+    <button class="btn btn-default btn-xs">Button-xs</button>
+
+    <h2 style="color: red">块级Button</h2>
+    <button class="btn btn-block">Button1</button>
+    <button class="btn btn-block">Button2</button>
+
+
+    <h2 style="color: red">Button激活</h2>
+    <button class="btn active">Button</button>
+
+    <h2 style="color: red">Button禁用</h2>
+    <button class="btn  disabled">Button</button>
+
+
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="/js/jquery-1.4.2.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
+    <title>BootStrap入门Demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body class="container">
+    <h1 style="text-align: center">排版样式</h1>
+    <h2 style="color: red">页面主体</h2>
+    <p>BootStrap框架！</p>
+    <p class="lead">lead表示段落突出 加粗 加大显示！</p>
+    <p>BootStrap框架！</p><p>BootStrap框架！</p>
+
+    <h2 style="color: red">标题从h1-h6</h2>
+    <h1>Bootstrap框架 </h1>
+    <h2>Bootstrap框架 </h2>
+    <h3>Bootstrap框架 </h3>
+    <h4>Bootstrap框架 </h4>
+    <h5>Bootstrap框架 </h5>
+    <h6>Bootstrap框架 </h6>
+    <span class="h1">内联元素使用.h1-h6显示</span>
+    <span class="h2">内联元素使用.h1-h6显示</span>
+    <h1>Bootstrap框架<small>在h标签中插入samll作为副标题</small> </h1>
+    <h2>Bootstrap框架<small>在h标签中插入samll作为副标题</small> </h2>
+    <h3>Bootstrap框架<small>在h标签中插入samll作为副标题</small> </h3>
+
+    <h2 style="color: red">内联文本元素</h2>
+    <p>Bootstrap<mark>框架</mark></p>
+    <del>BootStrap框架  带有删除线</del><br/>
+    <s>s标签 这是啥？ 也是带有删除线</s><br/>
+    <ins>BootStrap框架  是带有下划线的</ins><br/>
+    <u>BootStrap 这是u标签下划线</u><br/>
+    <small>small标签 小字体</small><br/>
+    <strong>strong标签 增强语气</strong><br/>
+    <em>em标签  倾斜标签</em><br/>
+
+    <h2 style="color: red">文本对齐</h2>
+    <p class="text-left">Bootstrap框架 text-left 左对齐</p>
+    <p class="text-right">Bootstrap框架 text-right 右对齐</p>
+    <p class="text-center">Bootstrap框架 text-center 居中</p>
+    <p class="text-justfy">Bootstrap框架 text-justfy两段对齐</p>
+    <p class="text-nowrap">Bootstrap框架 text-nowrap 不换行</p>
+    <p class="text-lowercase">Bootstrap框架 text-lowercase 小写</p>
+    <p class="text-uppercase">Bootstrap框架 text-uppercase 大写</p>
+    <p class="text-capitalize">Bootstrap框架 text-capitalize 首字母大写</p>
+
+    <h2 style="color: red">缩略语</h2>
+    <abbr th:title="华北科技学院" class="initialism">HK</abbr>
+    <h2 style="color: red">地址文本</h2>
+    <address>
+        <strong>Twitter,
+            Inc.</strong><br/>
+        795
+        Folsom
+        Ave,
+        Suite
+        600<br/>
+        San
+        Francisco,
+        CA
+        94107<br/>
+        <abbr
+                title="Phone">P:</abbr>
+        (123)
+        456-7890
+    </address>
+
+    <h2 style="color: red">引用文本blockquote</h2>
+    <blockquote>
+        -------BootStrap框架
+    </blockquote>
+    <blockquote class="blockquote-reverse">
+        -------BootStrap框架
+    </blockquote>
+
+    <h2 style="color: red">列表排版</h2>
+    <ul type="dist">
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+    </ul>
+
+    <ul class="list-unstyled">
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+    </ul>
+    <ul class="list-inline">
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+    </ul>
+
+    <ol >
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+    </ol>
+    <ol class="list-unstyled">
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+    </ol>
+    <ol class="list-inline">
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+        <li>BootStrap框架</li>
+    </ol>
+
+
+    <h2 style="color: red">描述列表</h2>
+    <dl class="dl-horizontal">
+        <dt>BootStrap框架</dt>
+        <dd>这个框架十分的好！！</dd>
+    </dl>
+    <h2 style="color: red">BootStrap代码</h2>
+    我要写代码:<code>System.out.prinln("Hello World!");    //这是内联代码</code>
+    我要写代码:<pre class="pre-scrollable">
+        public class DBUtils{  //这是代码块
+
+            public static void main(String args[]){
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+                 System.out.prinln("Hello World!");
+            }
+
+
+        }
+
+    </pre>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="/js/jquery-1.4.2.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
