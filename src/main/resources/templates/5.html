@@ -5,9 +5,42 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
     <title>BootStrap入门Demo</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        .a{
+            height:50px;
+            border: 1px solid #f7e1b5;
+            background: #9d9d9d;
+        }
+        .b{
+            height:50px;
+            border: 1px solid #f7e1b5;
+            background: #ffff00;
+        }
+
+    </style>
 </head>
-<body class="container">
-    <h1>排版样式</h1>
+<body >
+<h1 style="text-align: center">栅格布局</h1>
+<div class="container ">
+    <div class="row">
+        <div class="col-md-3  col-sm-5 a col-xs-2">1.1</div>
+        <div class="col-md-8 col-md-offset-1 col-sm-5 a col-xs-10 " style="padding: 0px">
+            <div class="col-md-6 b" >1.2.1</div>
+            <div class="col-md-6 b">1.2.2</div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-3 col-md-push-9 a">2.1</div>
+        <div class="col-md-9 col-md-pull-3 a">2.2</div>
+
+    </div>
+
+
+
+
+</div>
 
 
 

@@ -8,11 +8,213 @@
 </head>
 <body class="container">
 <h1 style="text-align: center">表单以及图片</h1>
+<h2 style="color: red">垂直表单</h2>
+    <form role="form" >
+        <div class="form-group">
+            <label for="username">用户名</label>
+            <input class="form-control" id="username" name="username" type="text" placeholder="请输入用户名"/>
+        </div>
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input class="form-control" id="password" name="password" type="password" placeholder="请输入密码"/>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="inputfil">文件输入</label>
+            <input type="file" id="inputfil"  />
+        </div>
+        <div class="form-group">
+            <label class="control-label">电子邮件</label>
+            <input class="form-control" type="email" placeholder="请输入电子邮件"/>
+        </div>
+        <label > 爱好:</label>
+        <div class="checkbox">
+            <label><input  name="hobby" type="checkbox" />水果</label>
+        </div>
+        <div class="checkbox">
+            <label><input  name="hobby" type="checkbox" />蔬菜</label>
+        </div>
+        <div class="checkbox">
+            <label><input  name="hobby" type="checkbox" />茶品</label>
+        </div>
+        <div class="radio">
+            性别:
+            <label><input  name="sex" type="radio" />男</label>
+            <label><input  name="sex" type="radio" />女</label>
+        </div>
+
+    </form>
+<h2 style="color: red">内联表单</h2>
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label for="name" >名称:</label>
+            <input id="name" type="text" class="form-control" placeholder="请输入名称"/>
+        </div>
+
+        <div class="form-group">
+            <label for="inputfile" class="sr-only">文件输入</label>
+            <input type="file" id="inputfile" />
+        </div>
+
+    </form>
+
+    <h2 style="color: red">水平表单</h2>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="firstname" class="col-sm-2 control-label">名字</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="firstname" placeholder="请输入名字"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastname" class="col-sm-2 control-label">姓</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="lastname" placeholder="请输入姓"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"/>请记住我
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">登录</button>
+            </div>
+        </div>
+
+    </form>
+<h2 style="color: red">下拉框</h2>
+    <form role="form">
+        <div class="form-group">
+            <label>选择列表</label>
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <label>多选择列表</label>
+            <select th:multiple="multiple" class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+        </div>
+
+    </form>
+<h2 style="color: red">静态控件</h2>
+    <form  class="form-horizontal" role="form">
+        <div class="form-group">
+            <label>文本框</label>
+            <textarea class="from-control" rows="3"></textarea>
+        </div>
 
 
 
+       <div class="container row">
+            <label class="col-xs-2 col-sm-2 control-label" style="background:red ">Email</label>
+            <div class="col-xs-10 col-sm-10" style="background:green ">
+                <span class="form-control">email@example.com</span>
+            </div>
+       </div>
+    </form>
 
 
+<h2 style="color: red">表单状态</h2>
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">聚焦</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="focusedInput" type="text" value="该输入框获得焦点..."/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">禁用</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="disabledInput" type="text" placeholder="该输入框禁止输入..." th:disabled="disabled" />
+        </div>
+    </div>
+    <fieldset th:disabled="disabled">
+        <div class="form-group">
+            <label for="disabledTextInput" class="col-sm-2 control-label">禁用输入（Fieldset disabled）</label>
+            <div class="col-sm-10">
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="禁止输入" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="disabledSelect" class="col-sm-2 control-label">禁用选择菜单（Fieldset disabled）</label>
+            <div class="col-sm-10">
+                <select id="disabledSelect" class="form-control">
+                    <option>禁止选择</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-group has-success ">
+        <label class="col-sm-2 control-label " for="inputSuccess">输入成功</label>
+        <div class="col-sm-10 ">
+            <input type="text" class="form-control" id="inputSuccess"/>
+        </div>
+    </div>
+    <div class="form-group has-warning">
+        <label class="col-sm-2 control-label" for="inputWarning">输入警告</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputWarning"/>
+        </div>
+    </div>
+    <div class="form-group has-error">
+        <label class="col-sm-2 control-label" for="inputError">输入错误</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputError"/>
+        </div>
+    </div>
+</form>
+
+    <form role="form">
+        <span>帮助文本实例</span>
+        <input class="form-control" type="text" placeholder=""/>
+        <span class="help-block">一个较长的帮助文本块，超过一行，
+  需要扩展到下一行。本实例中的帮助文本总共有两行。</span>
+    </form>
+
+
+    <h2 style="color: red">图片</h2>
+    <img  src="/img/1.png" alt="一张图片" class="img-thumbnail"/>
+    <h2 style="color: red">表单组合</h2>
+    <form class="form-horizontal" role="form">
+        <div class="input-group " style="width: 300px">
+            <div class="input-group-addon ">$</div>
+            <input type="text" class="form-control " />
+            <div class="input-group-addon">.00</div>
+        </div>
+
+        <div class="input-group  " style="width: 300px">
+            <div class="input-group-addon ">$</div>
+            <input type="text" class="form-control " />
+        </div>
+    </form>
+
+
+
+    <h2 style="color: red">添加额外的图标</h2>
+
+    <form role="form" class="form-horizontal">
+        <div class="form-group row has-feedback has-error">
+            <label for="" class="col-md-4 control-label">名字</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control " id="" placeholder="请输入名字"/>
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+        </div>
+    </form>
 
 
 
