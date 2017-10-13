@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
+    <title>BootStrap入门Demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body >
+    <h1>超大屏幕</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>欢迎登录页面！</h1>
+            <p>这是一个超大屏幕！jumbotron</p>
+            <p><a class="btn btn-default btn-md">学习更多</a></p>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h4>网页标题3</h4>
+        <h4>网页标题4</h4>
+    </div>
+
+    <h1 style="color: #3e8f3e;">缩略图</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a href="#" class="thumbnail">
+                    <img src="img/3597539.jpg" class="img-responsive"  alt="缩略图"/>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#" class="thumbnail">
+                    <img src="img/3597539.jpg" class="img-responsive"  alt="缩略图"/>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#" class="thumbnail">
+                    <img src="img/3597539.jpg" class="img-responsive"  alt="缩略图"/>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#" class="thumbnail">
+                    <img src="img/3597539.jpg" class="img-responsive"  alt="缩略图"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <h1>警示框</h1>
+    <div class="alert alert-success">alert-success 警示框</div>
+    <div class="alert alert-info">alert-info 警示框</div>
+    <div class="alert alert-warning">alert-warning 警示框</div>
+    <div class="alert alert-danger">alert-danger 警示框</div>
+
+    <h1>可关闭的警示框</h1>
+    <div class="alert alert-success alert-dismissable">
+        这是一个可以关闭的成功警示框
+        <button class="close"  aria-hidden="true" data-dismiss="alert">&times;</button>
+    </div>
+
+    <div class="alert alert-warning alert-dismissable">
+        这是一个可以关闭的信息警示框
+        <button class="close" data-dismiss="alert">&times;</button>
+    </div>
+
+    <div class="alert alert-warning alert-dismissable">
+        这是一个可以关闭的警告警示框
+        <button class="close" data-dismiss="alert">&times;</button>
+    </div>
+    <div class="alert alert-warning alert-dismissable">
+        这是一个可以关闭的危险警示框
+        <button class="close" data-dismiss="alert">&times;</button>
+    </div>
+
+
+    <h1>带链接的警示框</h1>
+    <div class="alert alert-success alert-dismissable">
+        <a href="#">请点击此处完成跳转！</a><button class="close" data-dismiss="alert">&times;</button>
+    </div>
+
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

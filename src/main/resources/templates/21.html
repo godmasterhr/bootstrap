@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
+    <title>BootStrap入门Demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body >
+    <ul id="nav" class="nav nav-tabs">
+        <li class="active"><a  href="#html5">HTML5</a></li>
+        <li><a  href="#bootstrap">BootStrap</a></li>
+        <li><a  href="#jquery">JQuery</a></li>
+        <li><a  href="#extjs">ExtJs</a></li>
+    </ul>
+
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="html5">HTML5</div>
+        <div class="tab-pane" id="bootstrap">BootStrap</div>
+        <div class="tab-pane" id="jquery">JQuery</div>
+        <div class="tab-pane" id="extjs">ExtJs</div>
+    </div>
+
+
+    <h2>工具提示</h2>
+    <a href="#" data-toggle="tooltip" title="&lt;h1&gt;超文本标记语言&lt;/h1&gt;"
+    data-animation="true" data-html="false" data-placement="auto"
+    >Html5</a>
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $("#nav a").on('click',function(e){
+            e.preventDefault();
+            $(this).tab('show');
+        })
+        $("#nav a").on('show.bs.tab',function(){
+            alert('hahha')
+        })
+        $("#nav a").on('shown.bs.tab',function(){
+            alert("eeeeeee")
+        })
+        $("a").tooltip();
+    </script>
+</body>
+</html>

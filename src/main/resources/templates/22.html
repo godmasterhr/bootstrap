@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
+    <title>BootStrap入门Demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        a:focus{ text-decoration:none}
+        a:hover{ text-decoration:none}
+    </style>
+</head>
+<body >
+    <h1>折叠插件</h1>
+    <button class="btn btn-warning" data-toggle="collapse" data-target="#content">BootStrap</button>
+    <div class="collapse" id="content">
+        <div class="well">Bootstrap 是Twitter 推出的一个用于前端开发的开源工具包。它由Twitter 的设计师Mark Otto 和Jacob Thornton 合作开发,是一个CSS/HTML 框架。目前,Bootstrap 最新版本为3.0 。
+        </div>
+    </div>
+
+
+<!--    <div class="panel-group" id="parent">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a style="text-decoration: none" href="#" data-toggle="collapse" data-target="#collapseOne" data-parent="#parent">第一部分链接</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse in" id="collapseOne">
+                <div class="panel-body ">
+                    第一部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#" data-toggle="collapse" data-target="#collapseTwo" data-parent="#parent">第二部分链接</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse " id="collapseTwo">
+                <div class="panel-body ">
+                    第二部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#" data-toggle="collapse" data-target="#collapseThree" data-parent="#parent">第三部分链接</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse " id="collapseThree">
+                <div class="panel-body ">
+                    第三部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#" data-toggle="collapse" data-target="#collapseFour" data-parent="#parent">第四部分链接</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse " id="collapseFour">
+                <div class="panel-body ">
+                    第四部分内容
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+
+    <div class="panel-group" id="parent">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a style="text-decoration: none" href="#" data-toggle="collapse" data-target="#collapseOne" >第一部分链接</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse in" id="collapseOne">
+                <div class="panel-body ">
+                    第一部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#" data-toggle="collapse" data-target="#collapseTwo" >第二部分链接</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse " id="collapseTwo">
+                <div class="panel-body ">
+                    第二部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#" data-toggle="collapse" data-target="#collapseThree" >第三部分链接</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse " id="collapseThree">
+                <div class="panel-body ">
+                    第三部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#" data-toggle="collapse" data-target="#collapseFour" >第四部分链接</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse " id="collapseFour">
+                <div class="panel-body ">
+                    第四部分内容
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#collapseOne,#collapseTwo,#collapseThree,#collapseFour").collapse({
+                parent:'#parent'
+            })
+
+        })
+    </script>
+
+</body>
+</html>

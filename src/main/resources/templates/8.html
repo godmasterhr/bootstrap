@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
+    <title>BootStrap入门Demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body >
+    <h1>基本的输入框组</h1>
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <div class="row">
+                <label class="control-label col-md-3">推特:</label>
+                <div class="col-md-9 input-group">
+                    <span class="input-group-addon">@</span>
+                    <input class="form-control " type="text" placeholder="请输入Twiter" />
+                    <span class="input-group-addon">.com</span>
+                </div>
+            </div>
+            <div class="row">
+                <label class="control-label col-md-3">搜索:</label>
+                <div class="col-md-9 input-group">
+                    <input class="form-control " type="text" placeholder="请输入关键词" />
+                    <span class="input-group-btn">
+                        <a class="btn btn-info"   href="http://www.baidu.com">Go!</a>
+                    </span>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+    <div style="padding: 100px 100px 10px;">
+        <form class="bs-example bs-example-form" role="form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox"/></span>
+                        <input type="text" class="form-control"/>
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+                <br/>
+                <div class="col-lg-6">
+                    <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="radio"/></span>
+                        <input type="text" class="form-control"/>
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </form>
+    </div>
+
+
+    <h2>按钮前后缀</h2>
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <div class="row">
+                <label class="control-label col-md-3">用户名:</label>
+                <div class="col-md-9 input-group">
+                    <span class="input-group-btn"><button class="btn btn-default">GO!</button></span>
+                    <input class="form-control " type="text" placeholder="请输入用户名" />
+                    <div class="input-group-addon">.00</div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="/js/jquery-1.4.2.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

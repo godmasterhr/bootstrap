@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
+    <title>BootStrap入门Demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body >
+    <h1>模态框</h1>
+    <!--模态框声明-->
+    <div class="modal " id="myModal" tabindex="-1">
+        <!--窗口声明-->
+        <div class="modal-dialog modal-lg">
+            <!--内容声明-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" data-dismiss="modal">&times;</span>
+                    <h4 class="modal-title">会员登录</h4>
+                </div>
+                <div class="modal-body">
+                    <p>暂时无法注册</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default">登录</button>
+                    <button class="btn btn-primary">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"
+        data-backdrop="static" data-keyboard="false"
+    >模态框</button>
+
+
+
+    <h1>再来一个模态框</h1>
+    <div class="modal   fade" id="secondModal" tabindex="-1">
+        <!--模态框窗体-->
+        <div  class="modal-dialog ">
+            <!--模态框内容-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    模态框标题
+                    <span class="close" data-dismiss="modal">&times;</span>
+                </div>
+                <div class="modal-body">模态框内容
+                    <table class="table table-bordered table-hover table-striped ">
+                        <tr>
+                            <th>姓名</th>
+                            <th>班级</th>
+                            <th>年龄</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">注册</button>
+                    <button type="button" id="login" class="btn btn-primary">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-success" data-toggle="modal" data-target="#myModal">点击</button>
+    <button id="btn" class="btn btn-danger" style="margin-top: 100px;display:block">js触发模态框</button>
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $("#btn").click(function(){
+           $("#secondModal").modal("show");
+        })
+
+        $("#secondModal").modal({
+            show:false,
+            backdrop:'static',
+            keyboard:false
+        });
+        $("#secondModal").on('show.bs.modal',function(){
+            alert("在调用 show 方法后触发。")
+        })
+        $("#secondModal").on('shown.bs.modal',function(){
+            alert("模态框加载之后触发。")
+        })
+        $("#secondModal").on('hide.bs.modal',function(){
+            alert("在调用 hide 方法后触发。")
+        })
+        $("#secondModal").on('hidden.bs.modal',function(){
+            alert("模态框消失后触发。")
+        })
+
+        $("#login").click(function(){
+            $("#secondModal").modal("hide");
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"   />
+    <title>BootStrap入门Demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body >
+    <h1>导航条</h1>
+
+    <nav class="navbar navbar-default"   style="background: #e2e2e2;" role="navigation">
+        <div class="container-fluid" >
+            <div class="navbar-header">
+                <span class="navbar-brand" >新世纪电子商城</span>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" data-toggle="tab">首页</a></li>
+                <li ><a href="#" data-toggle="tab">资讯</a></li>
+                <li class="disabled"><a href="#" data-toggle="tab">产品</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    --------------------------------------------------------<br/>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-head ">
+                <span class="navbar-brand">复仇者联盟</span>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a>钢铁侠</a></li>
+                <li><a>蜘蛛侠</a></li>
+                <li><a>美国队长</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">更多<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a>闪电侠</a></li>
+                        <li><a>风暴女</a></li>
+                        <li class="divider"></li>
+                        <li><a>...</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    ---------------------------------------------------------
+
+
+
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
